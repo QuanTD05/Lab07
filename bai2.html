@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+
+    <!-- Phần đầu trang -->
+    <div class="container-fluid bg-lightgreen">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Help Icon -->
+                <a href="#" class="text-decoration-none text-dark"><i class="fas fa-question-circle"></i> Help</a>
+                <!-- Phone Number -->
+                <a href="tel:0842118365" class="text-decoration-none text-dark ms-3"><i class="fas fa-phone-alt"></i>
+                    0842 118 365</a>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <!-- My Account -->
+                <a href="#" class="text-decoration-none text-dark me-3"><i class="fas fa-user"></i> My Account</a>
+                <!-- Sign In / Create Account -->
+                <a href="#" class="text-decoration-none text-dark"><i class="fas fa-sign-in-alt"></i> Sign In / Create
+                    Account</a>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light  bg-lightgreen">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="img/logo.jpg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="bai1.html">Home</a>
+                    </li>
+                    <!-- Dropdown for New Product -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            New Product
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Product 1</a></li>
+                            <li><a class="dropdown-item" href="#">Product 2</a></li>
+                            <li><a class="dropdown-item" href="#">Product 3</a></li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown for Shop -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownShopLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Shop
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownShopLink">
+                            <li><a class="dropdown-item" href="#">KIA K3</a></li>
+                            <li><a class="dropdown-item" href="#">KIA K5</a></li>
+                            <li><a class="dropdown-item" href="#">KIA CANIVALS</a></li>
+                            <li><a class="dropdown-item" href="#">KIA MONRING</a></li>
+                            <li><a class="dropdown-item" href="#">KIA SELTOS</a></li>
+
+                        </ul>
+                    </li>
+                    <!-- Dropdown for Pages -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPagesLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownPagesLink">
+                            <li><a class="dropdown-item" href="#">Page 1</a></li>
+                            <li><a class="dropdown-item" href="#">Page 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">All Package</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <!-- Cart Icon -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="bai2.html"><i class="fas fa-shopping-cart"></i></a>
+                    </li>
+                    <!-- Search Icon -->
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+                        </li>
+                    </form>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/banner.jpg" class="d-block w-100" alt="..." style="max-height: 500px;">
+            </div>
+            <div class="carousel-item">
+                <img src="img/tintuc3.jpg" class="d-block w-100" alt="..." style="max-height: 500px;">
+            </div>
+            <div class="carousel-item">
+                <img src="img/tintuc4.png" class="d-block w-100" alt="..." style="max-height: 500px;">
+
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Các liên kết dưới thanh điều hướng -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="bai1.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Category</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cart</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!-- Icons Shopping Cart -->
+            <div class="col-auto">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+            </div>
+            <!-- Chữ Shopping Cart -->
+            <div class="col-auto align-self-center">
+                <span>Shopping Cart</span>
+            </div>
+            <!-- Icons Back to Shopping -->
+            <div class="col-auto ms-auto">
+                <div class="d-flex align-items-center">
+                    <a class="nav-link" href="bai1.html">
+                        <i class="fas fa-arrow-left"></i> Back to Shopping
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Phần sản phẩm -->
+    <div class="container">
+        <div class="row">
+            <!-- Thông tin sản phẩm -->
+            <div class="col-md-9">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">PRODUCT</th>
+                            <th scope="col">Details</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Quantity</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="img/K3.webp" alt="Product 1" style="max-width: 100%; height: 50px;">
+                            </td>
+                            <td>
+                                KIA K3
+                            </td>
+                            <td class="price">10343</td>
+                            <td>
+                                <div class="input-group">
+
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Thông báo</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    Sản phẩm đã được xóa
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-outline-secondary" type="button"
+                                        onclick="increaseQuantity(this.nextElementSibling)">+</button>
+                                    <input type="text" class="form-control form-control-sm" value="1"
+                                        style="max-width: 30px;">
+                                    <button class="btn btn-outline-secondary" type="button"
+                                        onclick="decreaseQuantity(this.previousElementSibling)">-</button>
+                                </div>
+                            </td>
+
+                        </tr>
+                        <!-- Add more rows for other products -->
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="img/K5.1.png" alt="Product 1" style="max-width: 100%; height: 50px;">
+                            </td>
+                            <td>
+                                KIA k5
+                            </td>
+                            <td class="price">1034</td>
+                            <td>
+                                <div class="input-group">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Thông báo</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    Sản phẩm đã được xóa
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-outline-secondary" type="button"
+                                        onclick="increaseQuantity(this.nextElementSibling)">+</button>
+                                    <input type="text" class="form-control form-control-sm" placeholder="Quantity"
+                                        aria-label="Quantity" aria-describedby="button-addon1"
+                                        onchange="updateTotal(this)" value="1" style="max-width: 30px;">
+                                    <button class="btn btn-outline-secondary" type="button"
+                                        onclick="decreaseQuantity(this.previousElementSibling)">-</button>
+                                </div>
+                            </td>
+
+                        </tr>
+                        <!-- Add more rows for other products -->
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="img/K5.3.webp" alt="Product 1" style="max-width: 100%; height: 50px;">
+                            </td>
+                            <td>
+                                KIA K3
+                            </td>
+                            <td class="price">344</td>
+                            <td>
+                                <div class="input-group">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Thông báo</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    Sản phẩm đã được xóa
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-outline-secondary" type="button"
+                                        onclick="increaseQuantity(this.nextElementSibling)">+</button>
+                                    <input type="text" class="form-control form-control-sm" placeholder="Quantity"
+                                        aria-label="Quantity" aria-describedby="button-addon1"
+                                        onchange="updateTotal(this)" value="1" style="max-width: 30px;">
+                                    <button class="btn btn-outline-secondary" type="button"
+                                        onclick="decreaseQuantity(this.previousElementSibling)">-</button>
+                                </div>
+                            </td>
+
+
+                        </tr>
+                        <!-- Add more rows for other products -->
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="img/K3.1.webp" alt="Product 1" style="max-width: 100%; height: 50px;">
+                            </td>
+                            <td>
+                                KIA K5
+                            </td>
+                            <td class="price">103434</td>
+                            <td>
+                                <div class="input-group">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Thông báo</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    Sản Phẩm đã được xóa
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-outline-secondary" type="button"
+                                        onclick="increaseQuantity(this.nextElementSibling)">+</button>
+                                    <input type="text" class="form-control form-control-sm" placeholder="Quantity"
+                                        aria-label="Quantity" aria-describedby="button-addon1"
+                                        onchange="updateTotal(this)" value="1" style="max-width: 30px;">
+                                    <button class="btn btn-outline-secondary" type="button"
+                                        onclick="decreaseQuantity(this.previousElementSibling)">-</button>
+                                </div>
+                            </td>
+
+                        </tr>
+                        <!-- Add more rows for other products -->
+                    </tbody>
+                </table>
+            </div>
+            <!-- Thông tin thanh toán -->
+            <div class="col-md-3">
+                <div class="text-end">
+                    <button class="btn btn-primary">Proceed to Checkout</button>
+                </div>
+                <div>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>Total products:</td>
+                                <td id="totalProducts" class="text-end">100</td>
+                            </tr>
+                            <tr>
+                                <td>Shipping:</td>
+                                <td id="shipping" class="text-end">Free shipping</td>
+                            </tr>
+                            <tr>
+                                <td>Tax:</td>
+                                <td id="tax" class="text-end">0.00</td>
+                            </tr>
+                            <tr>
+                                <td>Total:</td>
+                                <td id="total" class="text-end">100</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Enter promo code">
+                    </div>
+                    <div class="col-md-6">
+                        <button class="btn btn-primary" onclick="calculateTotal()">Apply</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function calculateTotal() {
+            var totalPrice = 0;
+            var priceElements = document.querySelectorAll('.price');
+            var quantityInputs = document.querySelectorAll('.form-control');
+            var totalProductsElement = document.getElementById('totalProducts');
+            var shippingElement = document.getElementById('shipping');
+            var taxElement = document.getElementById('tax');
+            var totalElement = document.getElementById('total');
+
+            // Tính tổng giá trị của tất cả các sản phẩm
+            for (var i = 0; i < priceElements.length; i++) {
+                var price = parseFloat(priceElements[i].textContent.replace(/[^0-9.]/g, '')); // Loại bỏ các ký tự không phải số
+                var quantity = parseInt(quantityInputs[i].value);
+                if (!isNaN(price) && !isNaN(quantity)) { // Kiểm tra tính hợp lệ của giá và số lượng
+                    totalPrice += price * quantity;
+                }
+            }
+
+            // Cập nhật thông tin thanh toán
+            totalProductsElement.textContent = '$' + totalPrice.toFixed(2);
+            totalElement.textContent = '$' + totalPrice.toFixed(2);
+        }
+
+        function applyPromoCode() {
+            // Lấy giá trị nhập vào từ input mã giảm giá
+            var promoCodeInput = document.getElementById('promoCodeInput');
+            var promoCode = promoCodeInput.value.trim();
+
+            // Xử lý mã giảm giá ở đây (trong trường hợp này, chúng ta không thực hiện xử lý)
+
+            // Sau khi xử lý, gọi hàm tính toán tổng giá trị đơn hàng lại
+            calculateTotal();
+        }
+
+        // Các hàm updateTotal, decreaseQuantity, increaseQuantity không cần sửa đổi
+        function decreaseQuantity(input) {
+            var currentValue = parseInt(input.value);
+            if (currentValue > 1) {
+                input.value = currentValue - 1;
+                updateTotal(input);
+            }
+        }
+        function increaseQuantity(input) {
+            var currentValue = parseInt(input.value);
+            input.value = currentValue + 1;
+            updateTotal(input);
+        }
+    </script>
+
+
+
+
+
+    <!-- Phần footer -->
+    <footer class="bg-white text-dark pt-5 pb-4">
+        <div class="container text-center">
+            <div class="row">
+
+                <!-- Support -->
+                <div class="col-md-3">
+                    <h5 class=" font-weight-bold ">Support</h5>
+                    <p><a href="#" class="text-black">support@example.com</a></p>
+                </div>
+
+                <!-- Shop -->
+                <div class="col-md-1">
+                    <h5 class=" font-weight-bold ">Shop</h5>
+                    <p><a href="#" class="text-black">KIA K5</a></p>
+                    <p><a href="#" class="text-black">KIA K3</a></p>
+                    <p><a href="#" class="text-black">KIA CARENS </a></p>
+                </div>
+
+                <!-- Information -->
+                <div class="col-md-2">
+                    <h5 class=" font-weight-bold ">Information</h5>
+                    <p><a href="#" class="text-black">Questions?</a></p>
+                    <p><a href="#" class="text-black">Order Status</a></p>
+                </div>
+
+                <!-- My Account -->
+                <div class="col-md-3">
+                    <h5 class="font-weight-bold ">My Account</h5>
+                    <p><a href="#" class="text-black">My Account</a></p>
+                    <p><a href="#" class="text-black">My Address</a></p>
+                </div>
+
+                <!-- Stay in Touch -->
+                <div class="col-md-3">
+                    <h5 class=" font-weight-bold ">Stay in Touch</h5>
+                    <input type="email" placeholder="Your Email" class="subscribe-input">
+                    <button class="subscribe-btn">Subscribe</button>
+
+                    <!-- Social media icons -->
+                    <div class="icons">
+                        <a href="#" class=" pr-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class=" pr-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class=" pr-2"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class=" pr-2"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
